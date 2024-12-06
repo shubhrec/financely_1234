@@ -12,12 +12,14 @@ def sma(ticker):
     df[['SMA']].plot(figsize=(12,12))
     # plt.show()
     return plt
+    return plt.show()
 
 def ema(ticker):
     df = yf.Ticker(ticker).history(period='1y')
     # print(df.head())
     df['EMA'] = ta.EMA(df['Close'],20)
     df[['EMA']].plot(figsize=(12,12))
+    a = 'ty'
     # plt.show()
     return plt
 
@@ -26,6 +28,7 @@ def macd(ticker):
     # print(df.head())
     df['MACD'], df['MACDSIGNAL'], df['MACDHIST'] = ta.MACD(df['Close'],20)
     df[['MACD','MACDSIGNAL', 'MACDHIST']].plot(figsize=(12,12))
+    df['MACD'] = [456]
     # plt.show()
     return plt
     
