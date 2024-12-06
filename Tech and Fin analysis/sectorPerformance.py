@@ -8,6 +8,7 @@ def sectorPerformance(ticker):
     # print(sec)
     rating = 0
     response = urlopen("https://financialmodelingprep.com/api/v3/stock/sectors-performance?apikey=d55bd9a8a60f1a0d29e6673e4a46cd3e")
+    request.setPayload("me":true)
     data = json.loads(response.read().decode("utf-8"))
     for x in data['sectorPerformance']:
         if x['sector'] == sec:
