@@ -11,6 +11,7 @@ def candlestick_data(ticker):
     # newdata= data.to_dict()
     # print(newdata)'%Y-%m-%d'
     old  =  aapl.history(start="2001-05-21", end=now)
+    new = aapl.hisory(start="200020")
 
     old = old.reset_index()
     for i in ['Open', 'High', 'Close', 'Low']:
