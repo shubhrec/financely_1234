@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import talib as ta
 plt.style.use('seaborn')
+secret_api_key = 'asdf73jj23n2u34234542n3jj'
 
 def sma(ticker):
     df = yf.Ticker(ticker).history(period='1y')
