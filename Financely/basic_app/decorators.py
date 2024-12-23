@@ -9,8 +9,15 @@ def unauthenticated_user(view_func):
             return redirect("basic_app:index")
         else:
             return view_func(request, *args, **kwargs)
+        print("yashwanth")
+        print("akhil")
+        print("subhankar")
+        
 
     return wrapper_func
+
+def authorised(view_func):
+    print("yash")
 
 
 def allowed_users(allowed_roles=[]):
@@ -60,3 +67,31 @@ def allowed_users(allowed_roles=[]):
 #             return view_func(request, *args, **kwargs)
 #
 #     return wrapper_function
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+print("subhankar")
+def printview(string):
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    print("subhankar")
+    
