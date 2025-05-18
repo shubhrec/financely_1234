@@ -36,3 +36,4 @@ def piotroski(ticker):
     ATOFS = int((revenue/((totalAssets + totalAssetsPre)/2))>(revenuePre/((totalAssetsPre + totalAssetsPre2))))
     return ROAFS + CFOFS +  ROADFS + CFOROAFS + LTDFS + CRFS + NSFS + GMFS + ATOFS
 print(piotroski('msft'))
+print('msft')
