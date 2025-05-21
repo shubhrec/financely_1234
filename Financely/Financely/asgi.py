@@ -12,5 +12,8 @@ import os
 from django.core.asgi import get_asgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Financely.settings')
+console.log("Set the os environ")
+console.log("starting application")
+console.log("Get ready")
 
 application = get_asgi_application()
