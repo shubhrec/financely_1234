@@ -25,6 +25,7 @@ def piotroski(ticker):
     operatingCashFlowPre = cf.loc['Total Cash From Operating Activities'][1]
     commonStock = bs.loc['Common Stock'][0]
     commonStockPre = bs.loc['Common Stock'][1]
+    # Putting roafs and all 
     ROAFS = int(netIncome/((totalAssets + totalAssetsPre)/2)>0)
     CFOFS = int(operatingCashFlow>0)
     ROADFS = int((netIncome/((totalAssets + totalAssetsPre)/2))>(netIncomePre/((totalAssetsPre + totalAssetsPre2))))
